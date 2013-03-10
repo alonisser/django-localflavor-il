@@ -18,6 +18,8 @@ What's in the Israel localflavor?
   Input may contain an optional hyphen separating the ID number from the
   checksum digit.
 
+* forms.ILMobilePhoneNumberField: A form field that validates its input as a valid Israeli Mobile phone number. including and option hyphen, parethesis. and all Israeli and Palestinian carriers
+
 .. _Israeli identification number: http://he.wikipedia.org/wiki/%D7%9E%D7%A1%D7%A4%D7%A8_%D7%96%D7%94%D7%95%D7%AA_(%D7%99%D7%A9%D7%A8%D7%90%D7%9C)
 .. _Luhn algorithm: http://en.wikipedia.org/wiki/Luhn_algorithm
 
