@@ -2,3 +2,8 @@
 MANIFEST
 dist/
 docs/_build/
+*.egg*
+django_localflavor_il/models.py
+django_localflavor_il/urls.py
+build/
+models.py
