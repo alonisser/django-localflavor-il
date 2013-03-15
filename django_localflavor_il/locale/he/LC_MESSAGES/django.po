@@ -1,5 +1,5 @@
 # This file is distributed under the same license as the Django package.
-# 
+#
 # Translators:
 # Alex Gaynor <alex.gaynor@gmail.com>, 2011.
 # Jannis Leidel <jannis@leidel.info>, 2011.
@@ -7,20 +7,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: django-localflavor-il\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-20 16:39-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Alex Gaynor <alex.gaynor@gmail.com>\n"
+"POT-Creation-Date: 2013-03-16 00:54+0200\n"
+"PO-Revision-Date: 2013-03-16 00:58+0200\n"
+"Last-Translator: Alon Nisser <Alonisser@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.5\n"
 
-#: forms.py:32
-msgid "Enter a postal code in the format XXXXX"
-msgstr ""
+#: .\forms.py:34
+msgid "Enter a postal code in the format XXXXXXX (or XXXXX) - digits only"
+msgstr "הזן קוד מיקוד בפורמט XXXXXXX (או XXXXX) - ספרות בלבד"
 
-#: forms.py:51
+#: .\forms.py:53
 msgid "Enter a valid ID number."
-msgstr "יש להזין מספר זיהות תקף."
+msgstr "יש להזין מספר זהות תקף."
+
+#: .\forms.py:77
+msgid "Enter a valid Mobile Number."
+msgstr "יש להזין מספר טלפון נייד תקף."
