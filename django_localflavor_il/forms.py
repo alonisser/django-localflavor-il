@@ -35,7 +35,7 @@ class ILPostalCodeField(RegexField):
     }
 
     def __init__(self, *args, **kwargs):
-        super(ILPostalCodeField, self).__init__(r'^\d{5}$', *args, **kwargs)
+        super(ILPostalCodeField, self).__init__(r'^\d{5}$|^\d{7}$', *args, **kwargs)
 
     def clean(self, value):
         if value not in EMPTY_VALUES:
@@ -78,7 +78,7 @@ class ILMobilePhoneNumberField(Field):
     }
 
     def clean(self, value):
-        value = super(ILIDNumberField, self).clean(value)
+        value = super(ILMobilePhoneNumberField, self).clean(value)
 
         if value in EMPTY_VALUES:
             return ''
