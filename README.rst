@@ -8,7 +8,7 @@ What's in the Israel localflavor?
 =================================
 
 * forms.ILPostalCodeField: A form field that validates its input as an Israeli
-  Seven-digit postal code (since this change to 7 digits from 5 is new, this field also validates currently at 5 digits also).
+  Seven-digit postal code (since this change to 7 digits from 5 is new, this field also validates currently at 5 digits).
 
 * forms.ILIDNumberField: A form field that validates its input as an
   `Israeli identification number`_. The output will be in the format of a 2-9
