@@ -31,7 +31,7 @@ class ILPostalCodeField(RegexField):
     """
 
     default_error_messages = {
-        'invalid': _('Enter a postal code in the format XXXXX'),
+        'invalid': _('Enter a postal code in the format XXXXXXX (or XXXXX) - digits only'),
     }
 
     def __init__(self, *args, **kwargs):
