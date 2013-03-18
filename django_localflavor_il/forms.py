@@ -22,6 +22,7 @@ from django.utils.translation import ugettext_lazy as _
 # (hebrew) http://he.wikipedia.org/wiki/%D7%A7%D7%99%D7%93%D7%95%D7%9E%D7%AA_%D7%98%D7%9C%D7%A4%D7%95%D7%9F_%D7%91%D7%99%D7%A9%D7%A8%D7%90%D7%9C#.D7.A7.D7.99.D7.93.D7.95.D7.9E.D7.95.D7.AA_.D7.91.D7.99.D7.A9.D7.A8.D7.90.D7.9C_.D7.9C.D7.A4.D7.99_.D7.9E.D7.A4.D7.A2.D7.99.D7.9C.D7.99.D7.9D_.D7.95.D7.97.D7.9C.D7.95.D7.A7.D7.94_.D7.92.D7.90.D7.95.D7.92.D7.A8.D7.A4.D7.99.D7.AA
 
 id_number_re = re.compile(r'^(?P<number>\d{1,8})-?(?P<check>\d)$')
+mobile_phone_number_re = re.compile(r'^(\()?0?(5[02-9])(?(1)\))-?\d{7}$') #including palestinian mobile carriers
 
 class ILPostalCodeField(RegexField):
     """
@@ -66,3 +67,16 @@ class ILIDNumberField(Field):
         if not luhn(value):
             raise ValidationError(self.error_messages['invalid'])
         return value
+
+
+class ILMobilePhoneNumberField(RegexField):
+    """
+    A form field that validates its input as an Israeli Mobile phone number.
+    """
+
+    default_error_messages = {
+        'invalid':_('Enter a valid Mobile Number.'),
+    }
+
+    def __init__(self, *args, **kwargs):
+        super(ILMobilePhoneNumberField, self).__init__(mobile_phone_number_re, *args, **kwargs)
