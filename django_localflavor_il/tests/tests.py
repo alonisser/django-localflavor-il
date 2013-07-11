@@ -7,7 +7,7 @@ from django.test import SimpleTestCase
 
 
 class ILLocalFlavorTests(SimpleTestCase):
-    def test_ILPostalCodeField(self
+    def test_ILPostalCodeField(self):
         error_format = ['Enter a postal code in the format XXXXXXX (or XXXXX) - digits only']
         valid = {
             '69973': '69973',
