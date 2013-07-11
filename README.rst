@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/alonisser/django-localflavor-il.png)](https://travis-ci.org/alonisser/django-localflavor-il)
+
 =====================
 django_localflavor_il
 =====================
