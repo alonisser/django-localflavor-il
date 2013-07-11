@@ -23,7 +23,8 @@ from django.utils.translation import ugettext_lazy as _
 
 id_number_re = re.compile(r'^(?P<number>\d{1,8})-?(?P<check>\d)$')
 
-mobile_phone_number_re = re.compile(r'^(\()?0?(5[02-9])(?(1)\))-?\d{7}$') #including palestinian mobile carriers
+mobile_phone_number_re = re.compile(r'^(\()?0?(5[02-9])(?(1)\))-?\d{7}$')  # including palestinian mobile carriers
+
 
 class ILPostalCodeField(RegexField):
     """
@@ -76,7 +77,7 @@ class ILMobilePhoneNumberField(RegexField):
     """
 
     default_error_messages = {
-        'invalid':_('Enter a valid Mobile Number.'),
+        'invalid': _('Enter a valid Mobile Number.'),
     }
 
     def __init__(self, *args, **kwargs):
