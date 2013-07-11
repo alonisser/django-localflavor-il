@@ -7,24 +7,26 @@ msgid ""
 msgstr ""
 "Project-Id-Version: django-localflavor-il\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-16 00:54+0200\n"
+"POT-Creation-Date: 2013-03-18 10:18+0100\n"
 "PO-Revision-Date: 2013-03-16 00:58+0200\n"
 "Last-Translator: Alon Nisser <Alonisser@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.5.5\n"
 
-#: .\forms.py:34
+#: forms.py:34
 msgid "Enter a postal code in the format XXXXXXX (or XXXXX) - digits only"
 msgstr "הזן קוד מיקוד בפורמט XXXXXXX (או XXXXX) - ספרות בלבד"
 
-#: .\forms.py:53
+#: forms.py:53
 msgid "Enter a valid ID number."
 msgstr "יש להזין מספר זהות תקף."
 
-#: .\forms.py:77
+#: forms.py:78
+>>>>>>> upstream/master
 msgid "Enter a valid Mobile Number."
 msgstr "יש להזין מספר טלפון נייד תקף."
