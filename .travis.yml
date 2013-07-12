@@ -16,10 +16,10 @@ matrix:
   - python: "3.3"
 
 install:
-  pip install -q $DJANGO --use-mirrors
-  pip install -r requirement.txt --use-mirrors
-  pip install -q https://github.com/praekelt/django-setuptest --use-mirrors
+  - pip install -q $DJANGO --use-mirrors
+  - pip install -r requirement.txt --use-mirrors
+  - pip install -q https://github.com/praekelt/django-setuptest --use-mirrors
 
 script:
-  python setup.py test
+  - python setup.py test
 
