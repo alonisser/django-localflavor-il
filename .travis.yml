@@ -6,8 +6,8 @@ python:
   - "2.7"
   - "3.3"
 env:
-  - DJANGO=django==1.5.1
-  - DJANGO=django==1.4.3
+  - DJANGO=Django==1.5.1
+  - DJANGO=Django==1.4.3
   - DJANGO=https://www.djangoproject.com/download/1.6b1/tarball/
 
 matrix:
@@ -18,7 +18,7 @@ matrix:
 install:
   - pip install -q $DJANGO --use-mirrors
   - pip install -r requirements.txt --use-mirrors
-  - pip install -q https://github.com/praekelt/django-setuptest --use-mirrors
+  - pip install -q django-setuptest --use-mirrors
 
 script:
   - python setup.py test
