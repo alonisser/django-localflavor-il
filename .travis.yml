@@ -13,11 +13,14 @@ env:
 matrix:
   allow failures:
   - env: DJANGO=https://www.djangoproject.com/download/1.6b1/tarball/
+  include:
   - python: "3.3"
+    env: DJANGO=https://www.djangoproject.com/download/1.6b1/tarball/
+
 
 install:
   - pip install -q $DJANGO --use-mirrors
-  - pip install -r requirements.txt --use-mirrors
+  - pip install -r -q requirements.txt --use-mirrors
   - pip install -q django-setuptest --use-mirrors
 
 script:
