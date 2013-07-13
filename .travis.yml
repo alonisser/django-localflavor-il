@@ -10,8 +10,13 @@ env:
   - DJANGO=https://www.djangoproject.com/download/1.6b1/tarball/
 
 matrix:
+  # since isn't a Django release
   allow failures:
   - env: DJANGO=https://www.djangoproject.com/download/1.6b1/tarball/
+  # since most django versions won't work with 3.3. excluded won't run on the matrix
+  exclude:
+  - python: "3.3"
+  #the only version of django that's supposed to support 3.3
   include:
   - python: "3.3"
     env: DJANGO=https://www.djangoproject.com/download/1.6b1/tarball/
